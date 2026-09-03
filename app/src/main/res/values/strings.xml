@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GPT Mobile</string>
+    <string name="favorite_chat">Favorite chat</string>
+    <string name="unfavorite_chat">Unfavorite chat</string>
+</resources>
