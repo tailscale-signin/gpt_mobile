@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
                 ) {
                     HomeScreen(
                         viewModel = homeViewModel,
-                        onRoomClick = { /* Handle room click */ }
+                        onChatClick = { /* Handle chat click */ }
                     )
                 }
             }
