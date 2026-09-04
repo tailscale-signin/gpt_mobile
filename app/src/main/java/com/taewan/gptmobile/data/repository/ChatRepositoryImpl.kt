@@ -4,9 +4,8 @@ import com.taewan.gptmobile.data.database.dao.ChatRoomV2Dao
 import com.taewan.gptmobile.data.database.entity.ChatRoomV2Entity
 import com.taewan.gptmobile.domain.repository.ChatRepository
 import kotlinx.coroutines.flow.Flow
-import javax.inject.Inject
 
-class ChatRepositoryImpl @Inject constructor(
+class ChatRepositoryImpl(
     private val chatRoomV2Dao: ChatRoomV2Dao
 ) : ChatRepository {
 
