@@ -47,7 +47,7 @@ jobs:
             echo "tag=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
             echo "should_release=true" >> $GITHUB_OUTPUT
           elif [[ "${{ github.ref }}" == refs/heads/release/* ]]; then
-            echo "tag=${GITHUB_REF_NAME#release/}" >> $GITHUB_OUTPUT
+            echo "tag=${GITHUB_REF_NAME#refs/heads/release/}" >> $GITHUB_OUTPUT
             echo "should_release=true" >> $GITHUB_OUTPUT
           else
             echo "tag=v1.0.0-${{ github.run_number }}" >> $GITHUB_OUTPUT
